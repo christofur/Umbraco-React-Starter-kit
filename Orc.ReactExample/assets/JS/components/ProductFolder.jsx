@@ -17,15 +17,14 @@ var ProductItem = React.createClass({
 var	ProductFolderApp = React.createClass({
 	
 	render: function() {
-		console.log('Product Folder App');
-
-		/*var articles = ProductStore.getProducts();
+		var articles = ProductStore.getProducts();
 		var boxes = products.map(function(item,index){
 			return <ProductItem article={item} key={item.urlName} />
-		});*/
+		});
 		return (
 			<div>
-				<h4>curr 0.0.0.3</h4>
+				{boxes}
+				<h4>curr 0.0.0.1</h4>
 			</div>
 
 		);

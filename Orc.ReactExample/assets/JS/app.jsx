@@ -7,6 +7,7 @@ global.Router = Router;
 
 // Put our stores into global scope so everything has them
 global.ArticleStore = require("./stores/ArticleStore");
+global.ProductStore = require("./stores/ProductStore");
 
 var ReactRunner = require("./reactrunner.jsx");
 

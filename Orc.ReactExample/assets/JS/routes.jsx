@@ -10,6 +10,11 @@ var RouteHandler = Router.RouteHandler;
 var ArticleServerActions = require("./actions/ArticleServerActionCreators");
 var ArticleFolderApp = require("./components/ArticleFolder.jsx").ArticleFolderApp;
 var ArticleApp = require("./components/Article.jsx").ArticleApp;
+
+var ProductServerActions = require("./actions/ProductServerActionCreators");
+var ProductFolderApp = require("./components/ProductFolder.jsx").ArticleFolderApp;
+var ProductApp = require("./components/Product.jsx").ArticleApp;
+
 var HomeApp = require("./components/Home.jsx").HomeApp;
 
 var App = React.createClass({ 
@@ -68,6 +73,8 @@ var reactRoutesConfig = (
 	<Route name="app" handler={App}>
 		<Route name="articlesRoot" path="/articles" handler={ArticleFolderApp} />
 		<Route name="article" path="/articles/:articleName" handler={ArticleApp} />
+		<Route name="productsRoot" path="/products" handler={ProductFolderApp} />
+		<Route name="product" path="/products/:productName" handler={ProductApp} />
 		<Route name="home" path="/" handler={HomeApp} />
 		<DefaultRoute handler={CommingSoonPage} />
 		<NotFoundRoute handler={PageNotFound} />    

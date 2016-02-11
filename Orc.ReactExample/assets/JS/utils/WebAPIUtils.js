@@ -23,7 +23,6 @@ var makeRequest = function( url, postData, onError, onSuccess ) {
 
 module.exports = {
 	getFullDetails:function(url){
-		//BookingServerActionCreators.updatingBooking( pax );
 		makeRequest( 
 			"/articles/"+url, 
 			{},

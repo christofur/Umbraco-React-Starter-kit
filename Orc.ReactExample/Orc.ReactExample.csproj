@@ -212,7 +212,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Umbraco.sdf" />
     <Content Include="assets\bundle.js" />
     <Content Include="ClearScript.V8\ClearScriptV8-32.dll" />
     <Content Include="ClearScript.V8\ClearScriptV8-64.dll" />

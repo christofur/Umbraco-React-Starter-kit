@@ -14,7 +14,7 @@ module.exports = {
 			urlSlug:urlSlug,
 	
 		});
-		WebAPIUtils.getFullDetails( urlSlug );
+		WebAPIUtils.getFullProductDetails( urlSlug );
 	},
 
 

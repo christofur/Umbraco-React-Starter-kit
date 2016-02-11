@@ -1,4 +1,5 @@
 var ArticleServerActionCreators = require("../actions/ArticleServerActionCreators");
+var ProductServerActionCreators = require("../actions/ProductServerActionCreators");
 var request = require("superagent");
 var Constants = require('../Constants');
 
@@ -28,6 +29,14 @@ module.exports = {
 			{},
 			ArticleServerActionCreators.errorUpdatingArticle,
 			ArticleServerActionCreators.GotFullDetails
+		);
+	},
+	getFullProductDetails:function(url){
+		makeRequest(
+				"/products/"+url,
+				{},
+				ProductServerActionCreators.errorUpdatingArticle,
+				ProductServerActionCreators.GotFullDetails
 		);
 	},
 }

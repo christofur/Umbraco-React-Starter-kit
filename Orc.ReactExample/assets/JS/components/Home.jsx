@@ -20,7 +20,6 @@ var	HomeApp = React.createClass({
   },
 
   render: function() {
-    var data = this.state.initialData;
 
     return (
         <div>

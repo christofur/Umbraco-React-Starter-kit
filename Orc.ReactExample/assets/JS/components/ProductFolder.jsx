@@ -19,7 +19,7 @@ var	ProductFolderApp = React.createClass({
 	render: function() {
 		var products = ProductStore.getProducts();
 		var boxes = products.map(function(item,index){
-			return <ProductItem article={item} key={item.urlName} />
+			//return <ProductItem article={item} key={item.urlName} />
 		});
 		return (
 			<div>

@@ -24,7 +24,9 @@ var	ArticleFolderApp = React.createClass({
 		return (
 			<div>
 				{boxes}
+				<h4>curr 0.0.0.1</h4>
 			</div>
+
 		);
 	}
 });

@@ -25,6 +25,7 @@ var	HomeApp = React.createClass({
         <div>
           <div className="article-content">
             <h1>This is the homepage, made up from Static Content</h1>
+            <h4>v 1.0.0.2</h4>
           </div>
         </div>
     );

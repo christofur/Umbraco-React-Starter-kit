@@ -12,8 +12,8 @@ var ArticleFolderApp = require("./components/ArticleFolder.jsx").ArticleFolderAp
 var ArticleApp = require("./components/Article.jsx").ArticleApp;
 
 var ProductServerActions = require("./actions/ProductServerActionCreators");
-var ProductFolderApp = require("./components/ProductFolder.jsx").ArticleFolderApp;
-var ProductApp = require("./components/Product.jsx").ArticleApp;
+var ProductFolderApp = require("./components/ProductFolder.jsx").ProductFolderApp;
+var ProductApp = require("./components/Product.jsx").ProductApp;
 
 var HomeApp = require("./components/Home.jsx").HomeApp;
 
@@ -30,7 +30,7 @@ var App = React.createClass({
   		switch( handlerName ) {
 			case "articlesRoot":
 				ArticleServerActions.gotArticles( this.props.model.articles );
-				case "article":
+			case "article":
 				ArticleServerActions.GotFullDetails( this.props.model );
 			break;
 		}

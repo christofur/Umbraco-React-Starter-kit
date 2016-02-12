@@ -27,7 +27,7 @@ module.exports = {
 		/** Fired when a search result is returned by the server */
 	gotProducts: function(products) {
 		ProductDispatcher.handleServerAction({
-			type: ActionTypes.GOT_ARTICLES,
+			type: ActionTypes.GOT_PRODUCTS,
 			products: products
 		});
 	},

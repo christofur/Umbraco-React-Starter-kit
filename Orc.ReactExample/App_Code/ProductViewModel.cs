@@ -5,7 +5,6 @@ using System.Web;
 
 namespace Orc.ReactExample.Models
 {
-
     public class ProductViewModel
     {
         public string Title { get; set; }

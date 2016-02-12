@@ -26,12 +26,16 @@ var App = React.createClass({
  		var routes = this.context.router.getCurrentRoutes();
 		var handlerName = routes.reverse()[0].name;
 		var parentHandlerName = routes.reverse()[1].name;
-  		
+
   		switch( handlerName ) {
 			case "articlesRoot":
 				ArticleServerActions.gotArticles( this.props.model.articles );
 			case "article":
 				ArticleServerActions.GotFullDetails( this.props.model );
+			case "productsRoot":
+				ProductServerActions.gotProducts( this.props.model.products );
+			case "product":
+				ProductServerActions.GotFullDetails( this.props.model );
 			break;
 		}
 	},

@@ -44,7 +44,7 @@ var ProductStore = assign({}, EventEmitter.prototype, {
   },
 
   getProducts: function () {
-    return JSON.parse(JSON.stringify(_products));
+      return JSON.parse(JSON.stringify(_products));
   },
   getFullProduct: function () {
     return JSON.parse(JSON.stringify(_fullProduct));

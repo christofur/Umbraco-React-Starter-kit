@@ -12,8 +12,6 @@
     <script src="/assets/bundle.js"></script>
 </head>
 <body>
-    @Html.Render("reactApp", new {model= (object)model})
-    
-    @Html.RenderReactAssets()
+    @Model.Name @Model.Id
 </body>
 </html>
